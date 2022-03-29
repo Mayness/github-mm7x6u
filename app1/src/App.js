@@ -1,7 +1,9 @@
 import React, { Suspense } from 'react';
-const RemoteApp = React.lazy(() => import('app2/App'));
+// const RemoteApp = React.lazy(() => import('app2/App'));
+import DynamicComponent from './loadComponents.jsx'
 
 const App = () => {
+  
   return (
     <div>
       <div
@@ -14,11 +16,11 @@ const App = () => {
       >
         <h1>App1...</h1>
       </div>
-      <Suspense fallback={'loading...'}>
-        <RemoteApp />
-      </Suspense>
+      <DynamicComponent/>
     </div>
   );
 };
+
+
 
 export default App;
