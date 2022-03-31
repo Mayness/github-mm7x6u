@@ -1,3 +1,7 @@
-# github-mm7x6u
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/github-mm7x6u)
+## Demo
+由lerna进行多仓库管理
+### 启动
+```
+npm i
+npm run start
+```
