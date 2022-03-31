@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("// You can write your own logic here to determine the actual url\nwindow.app2Url = \"http://localhost:3002\"; // Use dynamic import here to allow webpack to interface with module federation code\n\n__webpack_require__.e(/*! import() */ \"src_bootstrap_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n\n//# sourceURL=webpack://app1/./src/index.js?");
+eval("__webpack_require__.e(/*! import() */ \"src_bootstrap_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n\n//# sourceURL=webpack://app1/./src/index.js?");
 
 /***/ })
 

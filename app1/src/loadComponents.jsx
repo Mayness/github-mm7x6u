@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 const DynamicComponent = ({name, ...props}) => {
   const Component = useMemo(() => {
     return React.lazy(() => loadRemoteComponent({
-      url: 'http://localhost:3002/remoteEntry.js',
+      // url: 'http://localhost:3002/remoteEntry.js',
       scope: 'app2',
       module: './App'
     }))
@@ -17,7 +17,7 @@ const DynamicComponent = ({name, ...props}) => {
           <span style={{fontSize: 50}}>Loading...</span>
         </div>
       }>
-      <Component {...props}>333</Component>
+      <Component {...props}></Component>
     </Suspense>
   )
 }
@@ -26,7 +26,8 @@ export default React.memo(DynamicComponent)
 
 
 async function loadRemoteComponent(config) {
-  return loadScript(config).then(() => loadComponentByWebpack(config))
+  // return loadScript(config).then(() => loadComponentByWebpack(config))
+  return loadComponentByWebpack(config);
 }
 
 function loadScript(config) {
