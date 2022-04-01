@@ -29,7 +29,10 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "core",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        subsyStem1: 'subsyStem1@http://localhost:3002/remoteEntry.js',
+        subsyStem2: 'subsyStem2@http://localhost:3003/remoteEntry.js',
+      },
       shared: {
         react: { singleton: true },
         "react-dom": { singleton: true },

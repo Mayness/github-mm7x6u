@@ -9,7 +9,7 @@ const App = () => {
       textAlign:"center",
       backgroundColor:"cyan"
     }}>
-      <h1 >subsyStem1 page</h1>
+      <h1 >subSystem1 page</h1>
     </div>
   )
 }
