@@ -50,6 +50,7 @@ async function loadComponentByWebpack({ scope, module }) {
   // 初始化共享作用域，这将使用此构建和所有远程提供的已知模块填充它
   const c = await __webpack_init_sharing__('default')
   const container = window[scope] // 获取容器
+  console.log(__webpack_share_scopes__)
   // 初始化容器，它可以提供共享模块
   await container.init(__webpack_share_scopes__.default);
   const factory = await window[scope].get(module);
